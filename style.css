@@ -1,323 +1,60 @@
-/* doubles as sanity check :) */
-body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* body {
+    background-image:
+      repeating-linear-gradient(60deg, transparent, transparent 20px, #ccc 20px, #ccc 40px),
+      repeating-linear-gradient(-60deg, transparent, transparent 20px, #ccc 20px, #ccc 40px),
+      repeating-radial-gradient(circle at 10% 10%, #ccc, #ccc 10px, transparent 10px, transparent 100%),
+      repeating-radial-gradient(circle at 90% 10%, #ccc, #ccc 10px, transparent 10px, transparent 100%);
+    background-size: 40px 70.7px;
+    background-color: #fff;
+  } */
 
-.container {
-    display: grid;
-    grid-template-columns: 30rem 30rem 10rem;
-    grid-template-rows: auto 20rem 20rem;
-    
-}
+  /* body {
+    background-image:
+      repeating-linear-gradient(60deg, transparent, transparent 28px, #ccc 28px, #ccc 56px),
+      repeating-linear-gradient(-60deg, transparent, transparent 28px, #ccc 28px, #ccc 56px),
+      repeating-radial-gradient(circle at 10% 10%, #ccc, #ccc 16.8px, transparent 16.8px, transparent 100%),
+      repeating-radial-gradient(circle at 90% 10%, #ccc, #ccc 16.8px, transparent 16.8px, transparent 100%);
+    background-size: 56px 99.2px;
+    background-color: #fff;
+  } */
+  
+  /* body {
+    background-image:
+      repeating-linear-gradient(60deg, transparent, transparent 28px, #ff00d4 28px, #00b7ff 56px),
+      repeating-linear-gradient(-60deg, transparent, transparent 28px, #ff00d4 28px, #00b7ff 56px),
+      repeating-radial-gradient(circle at 10% 10%, #ff00d4, #ff00d4 16.8px, transparent 16.8px, transparent 100%),
+      repeating-radial-gradient(circle at 90% 10%, #00b7ff, #00b7ff 16.8px, transparent 16.8px, transparent 100%);
+    background-size: 56px 99.2px;
+    background-color: #000;
+  } */
+  
+  
+  /* body {
+    background-image:
+      repeating-linear-gradient(60deg, transparent, transparent 28px, #333 28px, #333 56px),
+      repeating-linear-gradient(-60deg, transparent, transparent 28px, #333 28px, #333 56px),
+      repeating-radial-gradient(circle at 10% 10%, #333, #333 16.8px, transparent 16.8px, transparent 100%),
+      repeating-radial-gradient(circle at 90% 10%, #333, #333 16.8px, transparent 16.8px, transparent 100%);
+    background-size: 56px 99.2px;
+    background-color: #000;
+  } */
 
-.container > * {
-    margin: 1%;
-    border-radius: 8px;
-    padding: 1rem;
-    color: white;
-    
-}
-
-#navBar {
-    background-image: url(./received_1411342465738264.jpeg);
-    grid-column: 1/4;
-    grid-row: 1/2;
-    padding: 1rem;
-    /* margin-left: 50%; */
-    text-shadow: purple 1px 1px;
-}
-
-#nav1 {
-    padding: 1%;
-
-}
-#nav2 {
-    padding: 1%;
-    
-}
-#nav3 {
-    padding: 1%;
-    
-}
-#nav4 {
-    padding: 1%;
-    
-}
-#nav5 {
-    padding: 1%;
-    
-}
-/* styling for links */
-a {
-    color: white;
-}
-a:hover {
-    color: #ff00d4;
-    text-shadow: purple;
-    text-decoration: solid;
-}
-/* pieces in the nav bar */
-#name{
-    padding-left: 4.5%;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: left;
-    font-weight: bolder;
-    font-size: 2rem;
-    text-shadow: 0px 0px 3px #ff00d4, 0px 0px 5px #ff00d4;
-    
-}
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* Body */
-#aboutMe {
-    margin: 1rem;
-    background-color: black;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    /* margin-left: 45%; */
-    margin-top: 5%;
-    width: 350px;
-    padding: 15%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* Head font */
-#about {
-    margin: 1rem;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 175%;
-    margin: 2%;
-    margin-bottom: 4%;
-    
-}
-/* Picture */
-#picture{
-    grid-column: 2;
-    grid-row: 2;
-    height: 37rem;
-    margin: 5%;
-    margin-left: 40%;
-    width: auto;
-    padding: 0.1%;
-    padding-left: 0.7%;
-    padding-right: 0.6%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size: 2.7% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* ------------------------------------------------------------------------------------------------------------------------------- */
-/* FOR education.HTML ITEMS ONLY*/
-#educationSub{
-    margin: auto;
-    grid-column: 1/4;
-    grid-row: 2/3;
-    width: 90%;
-    padding: 3%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff);
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#ulEd{
-    margin-left: 34%;
-}
-
-#raiders:hover{
-    color: white;
-    text-shadow: blue 1px 1px;
-}
-
-#codeCrew:hover{
-    text-shadow: purple 1px 1px;
-}
-/* -------------------------------------------------------------------------------------------------------------------------------- */
-/* FOR resume.HTML ITEMS ONLY */
-
-#resume2{
-    grid-row: 2/5;
-    grid-column: 1/4;
-    padding-bottom: 14%;
-    border-radius: 5px;
-    color: white;
-    margin: 1%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#item{
-    margin-top: 3%;
-    height: 115%;
-    width: 75%;
-    margin-left: 13%;
-    border-radius: 5px;
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* For contact me page */
-#contactMe{  
-    grid-row: 2;
-    grid-column: 1/4;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-    border-top: 5px solid #ff00d4;
-    border-bottom:5px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* For projects page */
-.card-deck{
-    grid-row: 2;
-    grid-column: 1/4;
-
-}
-.card-deck > *{
-    background-color: black;
-}
-
-#card1{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#card2{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#card3{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#imageCard{
-    height: 50%;
-    width: 100%;
-}
-#imageCard2{
-    height: 50%;
-    width: 100%;
-}
-
-#imageCard3{
-    height: 50%;
-    width: 100%;
-}
-
-#highlight{
-    color: rgb(126, 228, 9);
-}
-
-#poketext{
-    margin-bottom: 13%;    
-}
-
-#btn{
-    margin-top: 20%;
-}
-
-#details {
-    margin: 1rem;
-    background-color: black;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    margin-left: 55%;
-    margin-top: 5%;
-    width: 500px;
-    /* padding-right: 25%; */
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-
-#space{
-    text-align: center;
-    padding: 1%;
-}
-
-#space1{
-    padding-top: 2%;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-#linkCol{
-    color: rgb(251, 255, 0);
-}
-
-#linkCol:hover{
-    color: rgb(224, 3, 224);
-}
+  body {
+    background: linear-gradient(120deg, #0e8dd1, #6b0851, #b10d90) fixed;
+    background-size: 400% 400%;
+    animation: bg-gradient 15s ease infinite;
+  }
+  
+  @keyframes bg-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  

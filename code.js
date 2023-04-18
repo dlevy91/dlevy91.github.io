@@ -8,7 +8,7 @@ document.addEventListener('mousemove', function (event) {
   var mouseY = event.clientY;
 
   // Update the background gradient position based on mouse position
-  var bgGradient = 'linear-gradient(' + (mouseX / window.innerWidth) * 360 + 'deg, #3884fd, #ff00c3)';
+  var bgGradient = 'linear-gradient(' + (mouseX / window.innerWidth) * 360 + 'deg, #ff00d4, #00b7ff)';
   document.body.style.background = bgGradient;
 
   // Update the mouse cursor position

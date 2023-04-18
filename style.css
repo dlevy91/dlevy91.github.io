@@ -1,237 +1,174 @@
-/* body {
-    background-image:
-      repeating-linear-gradient(60deg, transparent, transparent 20px, #ccc 20px, #ccc 40px),
-      repeating-linear-gradient(-60deg, transparent, transparent 20px, #ccc 20px, #ccc 40px),
-      repeating-radial-gradient(circle at 10% 10%, #ccc, #ccc 10px, transparent 10px, transparent 100%),
-      repeating-radial-gradient(circle at 90% 10%, #ccc, #ccc 10px, transparent 10px, transparent 100%);
-    background-size: 40px 70.7px;
-    background-color: #fff;
-  } */
-
-  /* body {
-    background-image:
-      repeating-linear-gradient(60deg, transparent, transparent 28px, #ccc 28px, #ccc 56px),
-      repeating-linear-gradient(-60deg, transparent, transparent 28px, #ccc 28px, #ccc 56px),
-      repeating-radial-gradient(circle at 10% 10%, #ccc, #ccc 16.8px, transparent 16.8px, transparent 100%),
-      repeating-radial-gradient(circle at 90% 10%, #ccc, #ccc 16.8px, transparent 16.8px, transparent 100%);
-    background-size: 56px 99.2px;
-    background-color: #fff;
-  } */
-  
-  /* body {
-    background-image:
-      repeating-linear-gradient(60deg, transparent, transparent 28px, #ff00d4 28px, #00b7ff 56px),
-      repeating-linear-gradient(-60deg, transparent, transparent 28px, #ff00d4 28px, #00b7ff 56px),
-      repeating-radial-gradient(circle at 10% 10%, #ff00d4, #ff00d4 16.8px, transparent 16.8px, transparent 100%),
-      repeating-radial-gradient(circle at 90% 10%, #00b7ff, #00b7ff 16.8px, transparent 16.8px, transparent 100%);
-    background-size: 56px 99.2px;
-    background-color: #000;
-  } */
-  
-  
-  /* body {
-    background-image:
-      repeating-linear-gradient(60deg, transparent, transparent 28px, #333 28px, #333 56px),
-      repeating-linear-gradient(-60deg, transparent, transparent 28px, #333 28px, #333 56px),
-      repeating-radial-gradient(circle at 10% 10%, #333, #333 16.8px, transparent 16.8px, transparent 100%),
-      repeating-radial-gradient(circle at 90% 10%, #333, #333 16.8px, transparent 16.8px, transparent 100%);
-    background-size: 56px 99.2px;
-    background-color: #000;
-  } */
-
-  /* body {
-    background: linear-gradient(120deg, #0e8dd1, #6b0851, #b10d90) fixed;
-    background-size: 400% 400%;
-    animation: bg-gradient 15s ease infinite;
-  }
-  
-  @keyframes bg-gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-   */
-  
    body {
-    background: linear-gradient(to right, #3884fd, #ff00c3);
-    overflow: hidden;
-  }
+     background: linear-gradient(to right, #ff00d4, #00b7ff);
+   }
 
-  /* Create a div to represent the mouse cursor */
-  .mouse-cursor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    pointer-events: none;
-    z-index: 9999;
-  }
+   /* Create a div to represent the mouse cursor */
+   .mouse-cursor {
+     top: 0;
+     left: 0;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.5);
+     pointer-events: none;
+     z-index: 9999;
+   }
 
-  /* -------------------------------------------------------------- */
+   /* -------------------------------------------------------------- */
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .header {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  .navbar {
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-list {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .section {
-    padding: 2rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .section-subtitle {
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  
-  .portfolio-item {
-    background-color: #333;
-    padding: 1rem;
-    color: #fff;
-  }
-  
-  .portfolio-title {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .portfolio-description {
-    font-size: 0.8rem;
-  }
-  
-  .section-contact label,
-  .section-contact input,
-  .section-contact textarea {
-    display: block;
-    margin-bottom: 0.5rem;
-    width: 100%;
-  }
-  
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-  }
-  
-  .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .slider:before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background-color: #fff;
-    border-radius: 20px;
-    transition: 0.3s;
-  }
-  
-  input[type="checkbox"] {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .dark-mode {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  .dark-mode .navbar {
-    background-color: #444;
-  }
-  
-  .dark-mode .nav-link {
-    color: #fff;
-  }
-  
-  .dark-mode .portfolio-item {
-    background-color: #444;
-  }
-  
-  .dark-mode .section-contact label,
-  .dark-mode .section-contact input,
-  .dark-mode .section-contact textarea {
-    color: #fff;
-  }
-  
-  .dark-mode .slider {
-    background-color: #fff;
-  }
-  
-  .dark-mode .slider:before {
-    background-color: #222;
-  }
-  
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     transition: background-color 0.3s ease-in-out;
+   }
+
+   .header {
+     background-color: #222;
+     color: #fff;
+     padding: 1rem;
+   }
+
+   .navbar {
+     display: flex;
+     position: sticky;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .nav-list {
+     display: flex;
+     gap: 1rem;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+
+   .nav-item {
+     margin: 0;
+     padding: 0;
+   }
+
+   .nav-link {
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .section {
+     padding: 2rem 0;
+   }
+
+   .section-title {
+     font-size: 2rem;
+     margin: 0;
+     padding: 0;
+   }
+
+   .section-subtitle {
+     font-size: 1rem;
+     margin: 0;
+     padding: 0;
+   }
+
+   .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 1rem;
+   }
+
+   .portfolio-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 1rem;
+   }
+
+   .portfolio-item {
+     background-color: #333;
+     padding: 1rem;
+     color: #fff;
+   }
+
+   .portfolio-title {
+     margin: 0;
+     padding: 0;
+   }
+
+   .portfolio-description {
+     font-size: 0.8rem;
+   }
+
+   .section-contact label,
+   .section-contact input,
+   .section-contact textarea {
+     display: block;
+     margin-bottom: 0.5rem;
+     width: 100%;
+   }
+
+   .switch {
+     position: relative;
+     display: inline-block;
+     width: 40px;
+     height: 20px;
+   }
+
+   .slider {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     border-radius: 10px;
+     transition: 0.3s;
+     cursor: pointer;
+   }
+
+   .slider:before {
+     content: "";
+     position: absolute;
+     top: -5px;
+     left: -5px;
+     right: -5px;
+     bottom: -5px;
+     background-color: #fff;
+     border-radius: 20px;
+     transition: 0.3s;
+   }
+
+   input[type="checkbox"] {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+
+   .dark-mode {
+     background-color: #222;
+     color: #fff;
+   }
+
+   .dark-mode .navbar {
+     background-color: #444;
+   }
+
+   .dark-mode .nav-link {
+     color: #fff;
+   }
+
+   .dark-mode .portfolio-item {
+     background-color: #444;
+   }
+
+   .dark-mode .section-contact label,
+   .dark-mode .section-contact input,
+   .dark-mode .section-contact textarea {
+     color: #fff;
+   }
+
+   .dark-mode .slider {
+     background-color: #fff;
+   }
+
+   .dark-mode .slider:before {
+     background-color: #222;
+   }

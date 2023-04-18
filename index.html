@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,231 @@
 
 <body>
 
+
+    <div class="mouse-cursor"></div>
+    <script src="./code.js"></script>
+</body>
+
+</html> -->
+<!-- ======================================================================================== -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section section-home">
+        <div class="container">
+            <h1 class="section-title">Welcome to my Portfolio</h1>
+            <p class="section-subtitle">I am a web developer</p>
+        </div>
+    </section>
+    <section id="about" class="section section-about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-content">I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I
+                have experience building responsive and user-friendly websites, and I am always eager to learn new
+                technologies and expand my skillset.</p>
+        </div>
+    </section>
+    <section id="portfolio" class="section section-portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
+                    <h3 class="portfolio-title">Portfolio Item 1</h3>
+                    <p class="portfolio-description">This is a description of Portfolio Item 1.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio-item-2.jpg" alt="Portfolio Item 2">
+                    <h3 class="portfolio-title">Portfolio Item 2</h3>
+                    <p class="portfolio-description">This is a description of Portfolio Item 2.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="contact.php" method="post" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <div class="mouse-cursor"></div>
+    <script src="./code.js"></script>
+</body>
+
+</html> -->
+<!-- =========================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <h1 class="logo">My Portfolio</h1>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="toggle-container">
+                    <input type="checkbox" id="toggle" class="toggle">
+                    <label for="toggle" class="toggle-label"></label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="home-content">
+                <h1 class="home-title">Hello, I'm John Doe</h1>
+                <p class="home-subtitle">A Web Developer</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <img src="profile.jpg" alt="Profile Picture" class="about-img">
+                </div>
+                <div class="about-item">
+                    <h3 class="about-title">Hi, I'm John Doe</h3>
+                    <p class="about-description">I am a passionate web developer with experience in front-end
+                        technologies like HTML, CSS, and JavaScript. I enjoy building visually appealing and interactive
+                        websites that provide a great user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">My technical abilities</p>
+            <ul class="skills-list">
+                <li class="skills-item">HTML</li>
+                <li class="skills-item">CSS</li>
+                <li class="skills-item">JavaScript</li>
+                <li class="skills-item">React</li>
+                <li class="skills-item">Node.js</li>
+                <li class="skills-item">Express.js</li>
+                <li class="skills-item">MongoDB</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">My recent works</p>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1" class="project-img">
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description">This is a description of Project 1. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit. Nullam tincidunt consequat risus, eu laoreet justo viverra et. Donec sed
+                        pharetra odio.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2" class="project-img">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">This is a description of Project 2. Integer sagittis semper quam, vel
+                        venenatis orci cursus in. Morbi consectetur libero ac vestibulum. Nunc facilisis, lacus nec
+                        feugiat tristique,
+                        elit purus ultricies enim, id efficitur justo purus eu dolor.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Project 3" class="project-img">
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-description">This is a description of Project 3. Sed vehicula felis id arcu
+                        tristique
+                        euismod. Nulla facilisi. Vestibulum ac suscipit turpis. Quisque vel neque venenatis, scelerisque
+                        metus in,
+                        venenatis metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic qualifications</p>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h3 class="education-title">Bachelor of Science in Computer Science</h3>
+                    <p class="education-school">XYZ University</p>
+                    <p class="education-date">2016-2020</p>
+                </li>
+                <li class="education-item">
+                    <h3 class="education-title">Web Development Bootcamp</h3>
+                    <p class="education-school">ABC Coding School</p>
+                    <p class="education-date">2021</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Let's get in touch</p>
+            <form class="contact-form">
+                <label for="name" class="contact-label">Name</label>
+                <input type="text" id="name" name="name" class="contact-input" required>
+                <label for="email" class="contact-label">Email</label>
+                <input type="email" id="email" name="email" class="contact-input" required>
+                <label for="message" class="contact-label">Message</label>
+                <textarea id="message" name="message" class="contact-input" required></textarea>
+                <input type="submit" value="Send" class="contact-submit">
+            </form>
+        </div>
+    </section>
+
+
+    <div class="mouse-cursor"></div>
+    <script src="code.js"></script>
 </body>
 
 </html>

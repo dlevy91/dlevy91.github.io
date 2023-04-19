@@ -4,78 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <title>Danielle Levy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-    <div class="container">
-
-        <div id="navBar">
-
-            <div id="name">
-                Danielle Levy
+<body class="dark-mode">
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <h1 class="logo">Danielle Levy</h1>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-
-            <ul class="nav justify-content-center">
-                <span id = "nav1"><a href="#">Home</a></span>
-                <span id = "nav2" ><a href="./projects.html">Projects</a></span>
-                <span id = "nav3"><a href="./education.html">Education</a></span>
-                <span id = "nav4"><a href="./resume.html">Resume</a></span>
-                <span id = "nav5"><a href="./contact.html">Contact Me</a></span>
-
-                <!-- <li id="nav-item-1">
-                    <a class="nav-link active" href="#">
-                        <h5>Home</h5>
-                    </a>
-                </li>
-
-                <li id="nav-item-2">
-                    <a class="nav-link" href="./projects.html">
-                        <h5>Projects</h5>
-                    </a>
-                </li>
-
-                <li id="nav-item-3">
-                    <a class="nav-link" href="./education.html">
-                        <h5>Education</h5>
-                    </a>
-                </li>
-
-                <li id="nav-item-4">
-                    <a class="nav-link" href="./resume.html">
-                        <h5>Resume</h5>
-                    </a>
-                </li>
-
-                <li id="nav-item-5">
-                    <a class="nav-link" href="./contact.html">
-                        <h5>Contact Me</h5>
-                    </a>
-                </li> -->
-
-            </ul>
-
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <img src="profile.jpg" alt="Profile Picture" class="about-img">
+                </div>
+                <div class="about-item">
+                    <h3 class="about-title">Hi, I'm Danielle</h3>
+                    <p class="about-description">I'm a creative and tech-savvy individual with a passion for art and
+                        technology. I currently live in Memphis but have had the opportunity to live in various other
+                        places, which has exposed me to diverse cultures and experiences. This has helped shape my
+                        perspective and fueled my curiosity to explore the intersection of technology and art.</p>
+                </div>
+            </div>
         </div>
-        <!-- About me body -->
-        <div id="aboutMe">
-            <h4 id="about">
-                About Me
-            </h4>
-            <p id="text">
-                    Hello, my name is Danielle Levy. I am a graduate of CodeCrew as of December 2020 where I learned HTML, CSS, JavaScript, .NET, and C#. I just moved to Forest City, NC from Memphis, TN and hoping to leave my mark on the world.</p>
-
-            <p>     A little about me, I was born in Memphis but have moved around a lot over my life and in doing so
-                have found a ton of things that interest me but two constants are my love for technology and art which I
-                want to find ways to combine into something that is meaningful to me.
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="about-description">I am proficient in creating responsive and visually appealing web pages using
+                HTML and CSS, as well as building interactive user interfaces and dynamic functionality with JavaScript.
+                Additionally, I have a solid understanding of the C# programming language, allowing me to develop robust
+                and scalable software applications. My expertise in these technologies allows me to create engaging and
+                interactive digital experiences that are both visually appealing and functionally robust.
             </p>
         </div>
+    </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h3 class="education-title">Full Stack Software Developer</h3>
+                    <p class="education-school">CodeCrew Code School</p>
+                    <p class="education-date">2020</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h3 class="education-title">Instructor</h3>
+                    <p class="education-school">CodeCrew Code School</p>
+                    <p class="education-date">2021-Current</p>
+                </li>
+                <li class="education-item">
+                    <h3 class="education-title">TMX Online Intern</h3>
+                    <p class="education-school">Terminix</p>
+                    <p class="education-date">2021</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">My recent works</p>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1" class="project-img">
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description">This is a description of Project 1. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit. Nullam tincidunt consequat risus, eu laoreet justo viverra et. Donec sed
+                        pharetra odio.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2" class="project-img">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">This is a description of Project 2. Integer sagittis semper quam, vel
+                        venenatis orci cursus in. Morbi consectetur libero ac vestibulum. Nunc facilisis, lacus nec
+                        feugiat tristique,
+                        elit purus ultricies enim, id efficitur justo purus eu dolor.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Project 3" class="project-img">
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-description">This is a description of Project 3. Sed vehicula felis id arcu
+                        tristique
+                        euismod. Nulla facilisi. Vestibulum ac suscipit turpis. Quisque vel neque venenatis, scelerisque
+                        metus in,
+                        venenatis metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <img src="./IMG_2487.JPG" alt="image of me" id="picture">
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Let's get in touch</p>
+            <form class="contact-form">
+                <label for="name" class="contact-label">Name</label>
+                <input type="text" id="name" name="name" class="contact-input" required>
+                <label for="email" class="contact-label">Email</label>
+                <input type="email" id="email" name="email" class="contact-input" required>
+                <label for="message" class="contact-label">Message</label>
+                <textarea id="message" name="message" class="contact-input" required></textarea>
+                <input type="submit" value="Send" class="contact-submit">
+            </form>
+        </div>
+    </section>
 
-    </div>
+
+    <div class="mouse-cursor"></div>
+    <script src="code.js"></script>
+</body>
 
 </html>

@@ -1,323 +1,174 @@
-/* doubles as sanity check :) */
-body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
+   body {
+     background: linear-gradient(to right, #ff00d4, #00b7ff);
+   }
 
-.container {
-    display: grid;
-    grid-template-columns: 30rem 30rem 10rem;
-    grid-template-rows: auto 20rem 20rem;
-    
-}
+   /* Create a div to represent the mouse cursor */
+   .mouse-cursor {
+     top: 0;
+     left: 0;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.5);
+     pointer-events: none;
+     z-index: 9999;
+   }
 
-.container > * {
-    margin: 1%;
-    border-radius: 8px;
-    padding: 1rem;
-    color: white;
-    
-}
+   /* -------------------------------------------------------------- */
 
-#navBar {
-    background-image: url(./received_1411342465738264.jpeg);
-    grid-column: 1/4;
-    grid-row: 1/2;
-    padding: 1rem;
-    /* margin-left: 50%; */
-    text-shadow: purple 1px 1px;
-}
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     transition: background-color 0.3s ease-in-out;
+   }
 
-#nav1 {
-    padding: 1%;
+   .header {
+     background-color: #222;
+     color: #fff;
+     padding: 1rem;
+   }
 
-}
-#nav2 {
-    padding: 1%;
-    
-}
-#nav3 {
-    padding: 1%;
-    
-}
-#nav4 {
-    padding: 1%;
-    
-}
-#nav5 {
-    padding: 1%;
-    
-}
-/* styling for links */
-a {
-    color: white;
-}
-a:hover {
-    color: #ff00d4;
-    text-shadow: purple;
-    text-decoration: solid;
-}
-/* pieces in the nav bar */
-#name{
-    padding-left: 4.5%;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: left;
-    font-weight: bolder;
-    font-size: 2rem;
-    text-shadow: 0px 0px 3px #ff00d4, 0px 0px 5px #ff00d4;
-    
-}
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* Body */
-#aboutMe {
-    margin: 1rem;
-    background-color: black;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    /* margin-left: 45%; */
-    margin-top: 5%;
-    width: 350px;
-    padding: 15%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* Head font */
-#about {
-    margin: 1rem;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 175%;
-    margin: 2%;
-    margin-bottom: 4%;
-    
-}
-/* Picture */
-#picture{
-    grid-column: 2;
-    grid-row: 2;
-    height: 37rem;
-    margin: 5%;
-    margin-left: 40%;
-    width: auto;
-    padding: 0.1%;
-    padding-left: 0.7%;
-    padding-right: 0.6%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size: 2.7% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* ------------------------------------------------------------------------------------------------------------------------------- */
-/* FOR education.HTML ITEMS ONLY*/
-#educationSub{
-    margin: auto;
-    grid-column: 1/4;
-    grid-row: 2/3;
-    width: 90%;
-    padding: 3%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff);
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   .navbar {
+     display: flex;
+     position: sticky;
+     justify-content: space-between;
+     align-items: center;
+   }
 
-#ulEd{
-    margin-left: 34%;
-}
+   .nav-list {
+     display: flex;
+     gap: 1rem;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
 
-#raiders:hover{
-    color: white;
-    text-shadow: blue 1px 1px;
-}
+   .nav-item {
+     margin: 0;
+     padding: 0;
+   }
 
-#codeCrew:hover{
-    text-shadow: purple 1px 1px;
-}
-/* -------------------------------------------------------------------------------------------------------------------------------- */
-/* FOR resume.HTML ITEMS ONLY */
+   .nav-link {
+     color: #fff;
+     text-decoration: none;
+   }
 
-#resume2{
-    grid-row: 2/5;
-    grid-column: 1/4;
-    padding-bottom: 14%;
-    border-radius: 5px;
-    color: white;
-    margin: 1%;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   .section {
+     padding: 2rem 0;
+   }
 
-#item{
-    margin-top: 3%;
-    height: 115%;
-    width: 75%;
-    margin-left: 13%;
-    border-radius: 5px;
-}
+   .section-title {
+     font-size: 2rem;
+     margin: 0;
+     padding: 0;
+   }
 
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* For contact me page */
-#contactMe{  
-    grid-row: 2;
-    grid-column: 1/4;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-    border-top: 5px solid #ff00d4;
-    border-bottom:5px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:0.4% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-/* For projects page */
-.card-deck{
-    grid-row: 2;
-    grid-column: 1/4;
+   .section-subtitle {
+     font-size: 1rem;
+     margin: 0;
+     padding: 0;
+   }
 
-}
-.card-deck > *{
-    background-color: black;
-}
+   .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 1rem;
+   }
 
-#card1{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   .portfolio-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 1rem;
+   }
 
-#card2{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   .portfolio-item {
+     background-color: #333;
+     padding: 1rem;
+     color: #fff;
+   }
 
-#card3{
-    margin: 5%;
-    width: 100%;
-    padding: 20px;
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    border-radius: 2%;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   .portfolio-title {
+     margin: 0;
+     padding: 0;
+   }
 
-#imageCard{
-    height: 50%;
-    width: 100%;
-}
-#imageCard2{
-    height: 50%;
-    width: 100%;
-}
+   .portfolio-description {
+     font-size: 0.8rem;
+   }
 
-#imageCard3{
-    height: 50%;
-    width: 100%;
-}
+   .section-contact label,
+   .section-contact input,
+   .section-contact textarea {
+     display: block;
+     margin-bottom: 0.5rem;
+     width: 100%;
+   }
 
-#highlight{
-    color: rgb(126, 228, 9);
-}
+   .switch {
+     position: relative;
+     display: inline-block;
+     width: 40px;
+     height: 20px;
+   }
 
-#poketext{
-    margin-bottom: 13%;    
-}
+   .slider {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     border-radius: 10px;
+     transition: 0.3s;
+     cursor: pointer;
+   }
 
-#btn{
-    margin-top: 20%;
-}
+   .slider:before {
+     content: "";
+     position: absolute;
+     top: -5px;
+     left: -5px;
+     right: -5px;
+     bottom: -5px;
+     background-color: #fff;
+     border-radius: 20px;
+     transition: 0.3s;
+   }
 
-#details {
-    margin: 1rem;
-    background-color: black;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    margin-left: 55%;
-    margin-top: 5%;
-    width: 500px;
-    /* padding-right: 25%; */
-    border-top: 4px solid #ff00d4;
-    border-bottom:4px solid #00b7ff;
-    background-image: 
-        linear-gradient(#ff00d4, #00b7ff),
-        linear-gradient(#ff00d4, #00b7ff)
-    ;
-    background-size:1.2% 100%;
-    background-position:0 0, 100% 0;
-    background-repeat:no-repeat;
-}
+   input[type="checkbox"] {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
 
-#space{
-    text-align: center;
-    padding: 1%;
-}
+   .dark-mode {
+     background-color: #222;
+     color: #fff;
+   }
 
-#space1{
-    padding-top: 2%;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bolder;
-}
+   .dark-mode .navbar {
+     background-color: #444;
+   }
 
-#linkCol{
-    color: rgb(251, 255, 0);
-}
+   .dark-mode .nav-link {
+     color: #fff;
+   }
 
-#linkCol:hover{
-    color: rgb(224, 3, 224);
-}
+   .dark-mode .portfolio-item {
+     background-color: #444;
+   }
+
+   .dark-mode .section-contact label,
+   .dark-mode .section-contact input,
+   .dark-mode .section-contact textarea {
+     color: #fff;
+   }
+
+   .dark-mode .slider {
+     background-color: #fff;
+   }
+
+   .dark-mode .slider:before {
+     background-color: #222;
+   }
